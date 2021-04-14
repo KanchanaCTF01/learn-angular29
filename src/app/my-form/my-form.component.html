@@ -1,0 +1,21 @@
+<form [formGroup]='form'>
+    <div>
+        Phone : <input formContronlName="phoneNo">
+    </div>
+    <div>
+        Email : <input formContronlName="email">
+    </div>
+    <div>
+        Password : <input formContronlName="password">
+    </div>
+    <div>
+        Confirm Password : <input formContronlName="confirmPassword">
+    </div>
+
+</form>
+<P>
+    Form Data Below
+</P>
+<code>
+    {{form.value | json}}
+</code>
